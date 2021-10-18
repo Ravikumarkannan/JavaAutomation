@@ -12,5 +12,4 @@ public class Constants {
 	
 	public final static String SCREENSHOT_FOLDER = "./screenshots/";
 	
-	
 }
