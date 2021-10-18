@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="4" passed="1" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicked on Header Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Field Login user name is filled with testnew1]]>
+    </line>
+    <line>
+      <![CDATA[Field Login password is filled with test@123]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout Successful]]>
+    </line>
+    <line>
+      <![CDATA[Capturing screenshot: Thu_Oct_14_19_03_40_IST_2021.jpg]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-10-14T19:02:55 IST" name="Suite" finished-at="2021-10-14T19:03:41 IST" duration-ms="45716">
+    <groups>
+    </groups>
+    <test started-at="2021-10-14T19:02:55 IST" name="Test" finished-at="2021-10-14T19:03:41 IST" duration-ms="45716">
+      <class name="com.automationpractice.testscripts.TC01_Login_Logout">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:02:55 IST" name="preSetup" finished-at="2021-10-14T19:02:55 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:02:56 IST" name="driverSetup" finished-at="2021-10-14T19:03:09 IST" duration-ms="12990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="login_Logout_Validation()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:09 IST" name="login_Logout_Validation" finished-at="2021-10-14T19:03:16 IST" duration-ms="7081" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Header Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Field Login user name is filled with testnew1]]>
+            </line>
+            <line>
+              <![CDATA[Field Login password is filled with test@123]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_Logout_Validation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:16 IST" name="tearDown" finished-at="2021-10-14T19:03:16 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:16 IST" name="driverSetup" finished-at="2021-10-14T19:03:25 IST" duration-ms="8887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method retried="true" signature="validate_Header_Links()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:25 IST" name="validate_Header_Links" finished-at="2021-10-14T19:03:25 IST" duration-ms="8" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.automationpractice.testscripts.TC01_Login_Logout.validate_Header_Links(TC01_Login_Logout.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Header_Links -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:25 IST" name="tearDown" finished-at="2021-10-14T19:03:25 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:25 IST" name="driverSetup" finished-at="2021-10-14T19:03:33 IST" duration-ms="7367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method retried="true" signature="validate_Header_Links()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:33 IST" name="validate_Header_Links" finished-at="2021-10-14T19:03:33 IST" duration-ms="4" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.automationpractice.testscripts.TC01_Login_Logout.validate_Header_Links(TC01_Login_Logout.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Header_Links -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:33 IST" name="tearDown" finished-at="2021-10-14T19:03:33 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:33 IST" name="driverSetup" finished-at="2021-10-14T19:03:40 IST" duration-ms="7142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validate_Header_Links()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:40 IST" name="validate_Header_Links" finished-at="2021-10-14T19:03:40 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.automationpractice.testscripts.TC01_Login_Logout.validate_Header_Links(TC01_Login_Logout.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Capturing screenshot: Thu_Oct_14_19_03_40_IST_2021.jpg]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_Header_Links -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:41 IST" name="tearDown" finished-at="2021-10-14T19:03:41 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationpractice.testscripts.TC01_Login_Logout@4fb61f4a]" started-at="2021-10-14T19:03:42 IST" name="closeBrowser" finished-at="2021-10-14T19:03:43 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationpractice.testscripts.TC01_Login_Logout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
