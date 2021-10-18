@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -84,14 +85,23 @@ public class CommonUtilities extends TestBase {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		Date date = new Date();
 		String screenshotName = date.toString().replace(":", "_").replace(" ", "_") + ".jpg";
-		
+
 		publishMessageInReports("Capturing screenshot: " + screenshotName);
-		
+
 		try {
 			FileUtils.copyFile(srcFile, new File(Constants.SCREENSHOT_FOLDER + screenshotName));
 		} catch (IOException e) {
 			e.printStackTrace();
-		
+		}
+
 	}
-}
+	
+	public void scrollToElement(WebElement element, String elementName) {
+		JavascriptExecutor jse = (JavascriptExecutor) getDriver();
+
+		publishMessageInReports("Scrolling to Element: '" + elementName + "'");
+
+		jse.executeScript("arguments[0].scrollIntoView(true);", element);
+
+	}
 }
