@@ -1,7 +1,7 @@
 package com.automationpractice.helpers;
 
-import com.automationpractice.pages.HomePage;
-import com.automationpractice.pages.LoginPage;
+import com.automationpractice.pageobjects.HomePage;
+import com.automationpractice.pageobjects.LoginPage;
 import com.automationpractice.utilities.CommonUtilities;
 
 public class LoginPageHelpers extends CommonUtilities {

@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
-import com.automationpractice.pages.HomePage;
+import com.automationpractice.pageobjects.HomePage;
 import com.automationpractice.utilities.CommonUtilities;
 
 public class HomePageHelpers extends CommonUtilities{
