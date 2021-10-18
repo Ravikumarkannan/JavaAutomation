@@ -1,4 +1,4 @@
-package com.automationpractice.pages;
+package com.automationpractice.pageobjects;
 
 import java.util.List;
 
