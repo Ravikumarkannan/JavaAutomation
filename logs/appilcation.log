@@ -1,27 +1,18 @@
-2021-10-14 19:02:55,640 - com.automationpractice.testbase.TestBase - INFO - Test Started...
- 2021-10-14 19:02:56,071 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
- 2021-10-14 19:03:03,188 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
- 2021-10-14 19:03:09,060 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
- 2021-10-14 19:03:09,374 - com.automationpractice.testbase.TestBase - INFO - Clicked on Header Login Button
- 2021-10-14 19:03:10,208 - com.automationpractice.testbase.TestBase - INFO - Field Login user name is filled with testnew1
- 2021-10-14 19:03:10,567 - com.automationpractice.testbase.TestBase - INFO - Field Login password is filled with test@123
- 2021-10-14 19:03:10,718 - com.automationpractice.testbase.TestBase - INFO - Clicked on Login Button
- 2021-10-14 19:03:14,803 - com.automationpractice.testbase.TestBase - INFO - Login Successful
- 2021-10-14 19:03:16,141 - com.automationpractice.testbase.TestBase - INFO - Clicked on Logout Button
- 2021-10-14 19:03:16,142 - com.automationpractice.testbase.TestBase - INFO - Logout Successful
- 2021-10-14 19:03:16,672 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
- 2021-10-14 19:03:16,675 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
- 2021-10-14 19:03:18,901 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
- 2021-10-14 19:03:25,560 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
- 2021-10-14 19:03:25,892 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
- 2021-10-14 19:03:25,895 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
- 2021-10-14 19:03:27,969 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
- 2021-10-14 19:03:33,261 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
- 2021-10-14 19:03:33,435 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
- 2021-10-14 19:03:33,437 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
- 2021-10-14 19:03:35,566 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
- 2021-10-14 19:03:40,577 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
- 2021-10-14 19:03:40,987 - com.automationpractice.testbase.TestBase - INFO - Capturing screenshot: Thu_Oct_14_19_03_40_IST_2021.jpg
- 2021-10-14 19:03:41,361 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
- 2021-10-14 19:03:43,065 - com.automationpractice.testbase.TestBase - INFO - Test Completed
+2021-10-18 20:17:55,690 - com.automationpractice.testbase.TestBase - INFO - Test Started...
+ 2021-10-18 20:17:56,254 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
+ 2021-10-18 20:18:10,513 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
+ 2021-10-18 20:18:19,843 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
+ 2021-10-18 20:18:20,253 - com.automationpractice.testbase.TestBase - INFO - Clicked on Header Login Button
+ 2021-10-18 20:18:21,548 - com.automationpractice.testbase.TestBase - INFO - Field Login user name is filled with testnew1
+ 2021-10-18 20:18:21,735 - com.automationpractice.testbase.TestBase - INFO - Field Login password is filled with test@123
+ 2021-10-18 20:18:21,877 - com.automationpractice.testbase.TestBase - INFO - Clicked on Login Button
+ 2021-10-18 20:18:26,112 - com.automationpractice.testbase.TestBase - INFO - Login Successful
+ 2021-10-18 20:18:30,203 - com.automationpractice.testbase.TestBase - INFO - Clicked on Logout Button
+ 2021-10-18 20:18:30,204 - com.automationpractice.testbase.TestBase - INFO - Logout Successful
+ 2021-10-18 20:18:30,630 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
+ 2021-10-18 20:18:30,632 - com.automationpractice.testbase.TestBase - INFO - driver Initialized
+ 2021-10-18 20:18:33,000 - com.automationpractice.testbase.TestBase - INFO - browser launched successfully
+ 2021-10-18 20:18:39,093 - com.automationpractice.testbase.TestBase - INFO - Successfully navigated to https://www.demoblaze.com/index.html
+ 2021-10-18 20:18:39,750 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
+ 2021-10-18 20:18:41,632 - com.automationpractice.testbase.TestBase - INFO - Test Completed
  

@@ -5,6 +5,35 @@
 	<groupId>javaautomation</groupId>
 	<artifactId>automationpractice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<plugins>
+			<!-- Following plug in executes the testng tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<!-- Suite testng xml file to consider for test execution -->
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+			<!-- Compiler plug in configures the java version to be used for compiling 
+				the code -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -24,7 +53,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.14.3</version>
-			<scope>test</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -40,7 +68,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.0.8</version>
 		</dependency>
-		
+
 		<!-- Below 2 dependencies are added to remove SL4J error from Eclipse IDE 
 			console -->
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
@@ -49,6 +77,12 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.32</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.0.0</version>
 		</dependency>
 
 	</dependencies>
