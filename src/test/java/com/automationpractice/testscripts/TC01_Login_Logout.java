@@ -12,6 +12,7 @@ public class TC01_Login_Logout extends TestBase {
 	@Test
 	public void login_Logout_Validation() {
 		LoginPageHelpers helper_Login_page = new LoginPageHelpers();
+		
 		helper_Login_page.login();
 		helper_Login_page.logout();
 	}

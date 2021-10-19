@@ -12,4 +12,15 @@ public class Constants {
 	
 	public final static String SCREENSHOT_FOLDER = "./screenshots/";
 	
+	/***************Browser Properties***************/
+	
+	public final static String BROWSER = "browser";
+	
+	public final static String BROWSER_CHROME = "Chrome";
+	
+	public final static String BROWSER_FIREFOX = "Firefox";
+	
+	public final static String BROWSER_IINTERNET_EXPLORER = "Internet Explorer";
+	
+	
 }
