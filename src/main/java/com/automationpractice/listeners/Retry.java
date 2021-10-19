@@ -9,9 +9,10 @@ public class Retry implements IRetryAnalyzer {
 
 	int retryCount = 0;
 	int maximumRetryCount = 2;
-	CommonUtilities utils = new CommonUtilities();
+	
 	
 	public boolean retry(ITestResult result) {
+		CommonUtilities utils = new CommonUtilities();
 
 		if (!result.isSuccess()) {
 			if (retryCount < maximumRetryCount) {
