@@ -1,12 +1,16 @@
 package com.automationpractice.utilities;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +26,17 @@ import com.aventstack.extentreports.Status;
 
 public class CommonUtilities extends TestBase {
 
-	WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+	WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+
+	public void validatePageTitle(String expectedPageTitle) {
+		String actualPageTitle = getDriver().getTitle();
+		try {
+			Assert.assertEquals(actualPageTitle, expectedPageTitle);
+			publishMessageInReports("Page title is validated: " + expectedPageTitle);
+		} catch (NullPointerException e) {
+			publishMessageInReports("Page title is not matching: " + expectedPageTitle + "due to" + e.getStackTrace());
+		}
+	}
 
 	public void fillTextField(WebElement element, String textBoxName, String valueToBeFilled) {
 		try {
@@ -31,7 +45,7 @@ public class CommonUtilities extends TestBase {
 			element.sendKeys(valueToBeFilled);
 			publishMessageInReports("Field " + textBoxName + " is filled with " + valueToBeFilled);
 		} catch (Exception e) {
-			publishMessageInReports_FAIL("Value enter in field" + textBoxName + "is failed due to" + e.getMessage());
+			publishMessageInReports_FAIL("Value enter in field" + textBoxName + "is failed due to" + e.getStackTrace());
 			e.printStackTrace();
 		}
 	}
@@ -41,25 +55,38 @@ public class CommonUtilities extends TestBase {
 			wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 			publishMessageInReports("Clicked on " + elementName);
 		} catch (Exception e) {
-			publishMessageInReports_FAIL("Unable to click " + elementName + e.getMessage());
+			publishMessageInReports_FAIL("Unable to click " + elementName + e.getStackTrace());
 			e.printStackTrace();
 		}
 	}
 
-	public Boolean isElementPresent(WebElement element) {
-		wait.until(ExpectedConditions.visibilityOf(element));
-		return element.isDisplayed();
-
+	public void isElementPresent(WebElement element) {
+		try {
+			wait.until(ExpectedConditions.visibilityOf(element));
+			assertTrue(element.isDisplayed());
+		} catch (ElementNotVisibleException e) {
+			publishMessageInReports("Element"+getElementText(element)+" is not present due to " + e.getStackTrace());
+		} catch (StaleElementReferenceException e) {
+			publishMessageInReports("Element"+getElementText(element)+" is not present due to " + e.getStackTrace());
+		}
 	}
 
 	public String getElementText(WebElement element) {
-		wait.until(ExpectedConditions.visibilityOf(element));
+		try {
+			wait.until(ExpectedConditions.visibilityOf(element));
+		} catch (Exception e) {
+			publishMessageInReports_FAIL("Element text not present" + e.getStackTrace());
+		}
 		return element.getText();
 	}
 
 	public void verifyElementText(WebElement element, String textExpected) {
-		String elementText = getElementText(element);
-		Assert.assertEquals(elementText, textExpected);
+		try {
+			String elementText = getElementText(element);
+			Assert.assertEquals(elementText, textExpected);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void publishMessageInReports(String message) {
@@ -95,7 +122,7 @@ public class CommonUtilities extends TestBase {
 		}
 
 	}
-	
+
 	public void scrollToElement(WebElement element, String elementName) {
 		JavascriptExecutor jse = (JavascriptExecutor) getDriver();
 

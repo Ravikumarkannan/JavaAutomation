@@ -1,7 +1,7 @@
 package com.automationpractice.helpers;
 
-import com.automationpractice.pages.HomePage;
-import com.automationpractice.pages.LoginPage;
+import com.automationpractice.pageobjects.HomePage;
+import com.automationpractice.pageobjects.LoginPage;
 import com.automationpractice.utilities.CommonUtilities;
 
 public class LoginPageHelpers extends CommonUtilities {
@@ -18,7 +18,7 @@ public class LoginPageHelpers extends CommonUtilities {
 			verifyElementText(home_page.getWelcomeUserText(), "Welcome testnew1");
 			publishMessageInReports_PASS("Login Successful");
 		} catch (Exception e) {
-			publishMessageInReports_FAIL("Login Failed");
+			publishMessageInReports_FAIL("Login Failed"  + e.getStackTrace());
 		}
 	}
 	
@@ -27,7 +27,7 @@ public class LoginPageHelpers extends CommonUtilities {
 			clickOnElement(home_page.getLink_logout(), "Logout Button");
 			publishMessageInReports_PASS("Logout Successful");
 		} catch (Exception e) {
-			publishMessageInReports_FAIL("Logout Failed");
+			publishMessageInReports_FAIL("Logout Failed " + e.getStackTrace());
 		}
 	}
 }

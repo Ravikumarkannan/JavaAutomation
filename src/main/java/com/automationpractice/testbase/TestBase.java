@@ -25,20 +25,19 @@ public class TestBase {
 	public Properties properties;
 
 	public void setDriver() {
-		String browserName = properties.getProperty("browser");
+		String browserName = properties.getProperty(Constants.BROWSER);
 		String URL = properties.getProperty("application_URL");
 
-		if (browserName.equalsIgnoreCase("chrome")) {
+		if (browserName.equalsIgnoreCase(Constants.BROWSER_CHROME)) {
 			WebDriverManager.chromedriver().setup();
 			driver.set(new ChromeDriver());
 		}
 		
-		log.info("browser launched successfully");
-		driver.get().manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-		driver.get().manage().window().maximize();
+		log.info("Driver instance initialized");
 
 		driver.get().get(URL);
-		log.info("Successfully navigated to " +URL);
+		driver.get().manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		driver.get().manage().window().maximize();
 	}
 
 	public WebDriver getDriver() {
@@ -50,7 +49,7 @@ public class TestBase {
 		PropertyConfigurator.configure(Constants.PROPERTIES_LOG4J);
 		properties = new Properties();
 		properties = reader.loadAllFiles();
-		log.info("Test Started...");
+		log.info("Test has been Started");
 
 	}
 
@@ -63,7 +62,6 @@ public class TestBase {
 
 	@BeforeMethod(alwaysRun = true)
 	public void driverSetup() {
-		log.info("driver Initialized");
 		setDriver();
 	}
 
