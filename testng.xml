@@ -7,7 +7,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.automationpractice.testscripts.TC01_Login_Logout"/>
+      <class name="com.automationpractice.testscripts.TS01_LoginValidation"/>
+      <class name="com.automationpractice.testscripts.TS02_HomePageValidation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

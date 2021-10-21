@@ -22,7 +22,7 @@ public class TestBase {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	protected Logger log = Logger.getLogger(TestBase.class.getName());
 	public PropertyReader reader = new PropertyReader();
-	public Properties properties;
+	public static Properties properties;
 
 	public void setDriver() {
 		String browserName = properties.getProperty(Constants.BROWSER);

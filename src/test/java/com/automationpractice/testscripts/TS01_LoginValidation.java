@@ -6,11 +6,11 @@ import com.automationpractice.helpers.HomePageHelpers;
 import com.automationpractice.helpers.LoginPageHelpers;
 import com.automationpractice.testbase.TestBase;
 
-public class TC01_Login_Logout extends TestBase {
+public class TS01_LoginValidation extends TestBase {
 
 	
 	@Test
-	public void login_Logout_Validation() {
+	public void tc01_login_Logout_Validation() {
 		LoginPageHelpers helper_Login_page = new LoginPageHelpers();
 		
 		helper_Login_page.login();
@@ -18,7 +18,7 @@ public class TC01_Login_Logout extends TestBase {
 	}
 	
 	@Test
-	public void validate_Header_Links() {
+	public void tc02_validate_Header_Links() {
 		HomePageHelpers helper_Home_page = new HomePageHelpers();
 		helper_Home_page.validate_header_links(); 
 	}

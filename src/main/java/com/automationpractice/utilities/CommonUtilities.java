@@ -79,7 +79,7 @@ public class CommonUtilities extends TestBase {
 		}
 		return element.getText();
 	}
-
+	
 	public void verifyElementText(WebElement element, String textExpected) {
 		try {
 			String elementText = getElementText(element);
@@ -129,6 +129,5 @@ public class CommonUtilities extends TestBase {
 		publishMessageInReports("Scrolling to Element: '" + elementName + "'");
 
 		jse.executeScript("arguments[0].scrollIntoView(true);", element);
-
 	}
 }
