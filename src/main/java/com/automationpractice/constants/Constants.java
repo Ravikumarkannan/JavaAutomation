@@ -12,6 +12,8 @@ public class Constants {
 	
 	public final static String SCREENSHOT_FOLDER = "./screenshots/";
 	
+	public final static String EXCEL_FILE_PATH = "./src/test//resources//testdata//login_testdata.xlsx";
+	
 	/***************Browser Properties***************/
 	
 	public final static String BROWSER = "browser";

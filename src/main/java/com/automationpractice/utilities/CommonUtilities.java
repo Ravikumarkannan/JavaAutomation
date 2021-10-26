@@ -18,7 +18,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
-
 import com.automationpractice.constants.Constants;
 import com.automationpractice.listeners.TestListener;
 import com.automationpractice.testbase.TestBase;
@@ -32,10 +31,10 @@ public class CommonUtilities extends TestBase {
 		String actualPageTitle = getDriver().getTitle();
 		try {
 			Assert.assertEquals(actualPageTitle, expectedPageTitle);
-			publishMessageInReports("Page title is validated: " + expectedPageTitle);
 		} catch (NullPointerException e) {
 			publishMessageInReports("Page title is not matching: " + expectedPageTitle + "due to" + e.getStackTrace());
 		}
+		publishMessageInReports("Page title is validated: " + expectedPageTitle);
 	}
 
 	public void fillTextField(WebElement element, String textBoxName, String valueToBeFilled) {
@@ -43,21 +42,21 @@ public class CommonUtilities extends TestBase {
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.clear();
 			element.sendKeys(valueToBeFilled);
-			publishMessageInReports("Field " + textBoxName + " is filled with " + valueToBeFilled);
 		} catch (Exception e) {
 			publishMessageInReports_FAIL("Value enter in field" + textBoxName + "is failed due to" + e.getStackTrace());
 			e.printStackTrace();
 		}
+		publishMessageInReports("Field " + textBoxName + " is filled with " + valueToBeFilled);
 	}
 
 	public void clickOnElement(WebElement element, String elementName) {
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-			publishMessageInReports("Clicked on " + elementName);
 		} catch (Exception e) {
 			publishMessageInReports_FAIL("Unable to click " + elementName + e.getStackTrace());
 			e.printStackTrace();
 		}
+		publishMessageInReports("Clicked on " + elementName);
 	}
 
 	public void isElementPresent(WebElement element) {
@@ -65,9 +64,11 @@ public class CommonUtilities extends TestBase {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			assertTrue(element.isDisplayed());
 		} catch (ElementNotVisibleException e) {
-			publishMessageInReports("Element"+getElementText(element)+" is not present due to " + e.getStackTrace());
+			publishMessageInReports(
+					"Element" + getElementText(element) + " is not present due to " + e.getStackTrace());
 		} catch (StaleElementReferenceException e) {
-			publishMessageInReports("Element"+getElementText(element)+" is not present due to " + e.getStackTrace());
+			publishMessageInReports(
+					"Element" + getElementText(element) + " is not present due to " + e.getStackTrace());
 		}
 	}
 
@@ -79,7 +80,16 @@ public class CommonUtilities extends TestBase {
 		}
 		return element.getText();
 	}
-	
+
+	public String getElementAttribute(WebElement element, String attributeName) {
+		try {
+			wait.until(ExpectedConditions.visibilityOf(element));
+		} catch (Exception e) {
+			publishMessageInReports_FAIL("Element text not present" + e.getStackTrace());
+		}
+		return element.getAttribute(attributeName);
+	}
+
 	public void verifyElementText(WebElement element, String textExpected) {
 		try {
 			String elementText = getElementText(element);
@@ -130,4 +140,20 @@ public class CommonUtilities extends TestBase {
 
 		jse.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
+	
+	public String getAlertText() {
+		wait.until(ExpectedConditions.alertIsPresent());
+		String alertText = getDriver().switchTo().alert().getText();
+		return alertText;
+	}
+	
+	public void handleAlert(String userInput) {
+		wait.until(ExpectedConditions.alertIsPresent());
+		if (userInput.equalsIgnoreCase("accept"))
+			getDriver().switchTo().alert().accept();
+		else {
+			getDriver().switchTo().alert().accept();
+		}
+	}
+
 }

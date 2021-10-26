@@ -19,7 +19,7 @@ import com.automationpractice.utilities.CommonUtilities;
 
 public class TestListener extends TestBase implements ITestListener {
 
-	static ExtentReports report;
+	ExtentReports report;
 	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	public void onTestStart(ITestResult result) {

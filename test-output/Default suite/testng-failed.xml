@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.testscripts.TC01_Login_Logout">
+      <class name="com.automationpractice.testscripts.TS01_LoginValidation">
         <methods>
-          <include name="login_Logout_Validation"/>
-          <include name="preSetup"/>
           <include name="closeBrowser"/>
+          <include name="driverSetup"/>
+          <include name="tc01_login_Logout_Validation" invocation-numbers="0"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.automationpractice.testscripts.TC01_Login_Logout -->
+      </class> <!-- com.automationpractice.testscripts.TS01_LoginValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

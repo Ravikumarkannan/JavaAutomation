@@ -1,33 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Clicked on Header Signup Button]]>
+    </line>
+    <line>
+      <![CDATA[Field Signup User Name is filled with userfortest987]]>
+    </line>
+    <line>
+      <![CDATA[Field Signup Password is filled with oookjjuahs344]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Signup Button]]>
+    </line>
+    <line>
+      <![CDATA[Signup is Successful]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Header Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Field Login user name  is filled with testnew1]]>
+    </line>
+    <line>
+      <![CDATA[Field Login password  is filled with test@123]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login is Successful]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout Successful]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Header Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Field Login user name  is filled with testnew2]]>
+    </line>
+    <line>
+      <![CDATA[Field Login password  is filled with test@123]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Login is Successful]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout Successful]]>
+    </line>
+    <line>
+      <![CDATA[Home page products titles validated]]>
+    </line>
+    <line>
+      <![CDATA[Home page products images validated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-10-21T20:15:29 IST" name="Default suite" finished-at="2021-10-21T20:15:43 IST" duration-ms="13561">
+  <suite started-at="2021-10-26T19:37:04 IST" name="Suite" finished-at="2021-10-26T19:38:19 IST" duration-ms="74456">
     <groups>
     </groups>
-    <test started-at="2021-10-21T20:15:29 IST" name="Default test" finished-at="2021-10-21T20:15:43 IST" duration-ms="13561">
-      <class name="com.automationpractice.testscripts.TS02_HomePageValidation">
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@7b2bbc3]" started-at="2021-10-21T20:15:29 IST" name="preSetup" finished-at="2021-10-21T20:15:29 IST" duration-ms="174" status="PASS">
+    <test started-at="2021-10-26T19:37:04 IST" name="Test" finished-at="2021-10-26T19:38:19 IST" duration-ms="74456">
+      <class name="com.automationpractice.testscripts.TS01_LoginValidation">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:04 IST" name="preSetup" finished-at="2021-10-26T19:37:04 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@7b2bbc3]" started-at="2021-10-21T20:15:29 IST" name="driverSetup" finished-at="2021-10-21T20:15:39 IST" duration-ms="9887" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:05 IST" name="driverSetup" finished-at="2021-10-26T19:37:20 IST" duration-ms="15651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="tc03_validate_homepage_products()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@7b2bbc3]" started-at="2021-10-21T20:15:39 IST" name="tc03_validate_homepage_products" finished-at="2021-10-21T20:15:42 IST" duration-ms="3393" status="PASS">
+        <test-method signature="tc01_signup_validation()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:20 IST" name="tc01_signup_validation" finished-at="2021-10-26T19:37:23 IST" duration-ms="3171" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on Header Signup Button]]>
+            </line>
+            <line>
+              <![CDATA[Field Signup User Name is filled with userfortest987]]>
+            </line>
+            <line>
+              <![CDATA[Field Signup Password is filled with oookjjuahs344]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Signup Button]]>
+            </line>
+            <line>
+              <![CDATA[Signup is Successful]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- tc03_validate_homepage_products -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@7b2bbc3]" started-at="2021-10-21T20:15:42 IST" name="tearDown" finished-at="2021-10-21T20:15:43 IST" duration-ms="206" status="PASS">
+        </test-method> <!-- tc01_signup_validation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:23 IST" name="tearDown" finished-at="2021-10-26T19:37:24 IST" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@7b2bbc3]" started-at="2021-10-21T20:15:43 IST" name="closeBrowser" finished-at="2021-10-21T20:15:44 IST" duration-ms="907" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:25 IST" name="driverSetup" finished-at="2021-10-26T19:37:32 IST" duration-ms="6705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="tc02_login_Logout_Validation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:32 IST" name="tc02_login_Logout_Validation" data-provider="loginTestData" finished-at="2021-10-26T19:37:37 IST" duration-ms="5068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testnew1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Welcome testnew1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Header Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Field Login user name  is filled with testnew1]]>
+            </line>
+            <line>
+              <![CDATA[Field Login password  is filled with test@123]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Login is Successful]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc02_login_Logout_Validation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:37 IST" name="tearDown" finished-at="2021-10-26T19:37:38 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:38 IST" name="driverSetup" finished-at="2021-10-26T19:37:45 IST" duration-ms="6669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="tc02_login_Logout_Validation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:45 IST" name="tc02_login_Logout_Validation" data-provider="loginTestData" finished-at="2021-10-26T19:37:49 IST" duration-ms="4578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testnew2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Welcome testnew2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Header Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Field Login user name  is filled with testnew2]]>
+            </line>
+            <line>
+              <![CDATA[Field Login password  is filled with test@123]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Login is Successful]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc02_login_Logout_Validation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:37:49 IST" name="tearDown" finished-at="2021-10-26T19:37:54 IST" duration-ms="4878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationpractice.testscripts.TS01_LoginValidation@65fb9ffc]" started-at="2021-10-26T19:38:19 IST" name="closeBrowser" finished-at="2021-10-26T19:38:19 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationpractice.testscripts.TS01_LoginValidation -->
+      <class name="com.automationpractice.testscripts.TS02_HomePageValidation">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:37:54 IST" name="driverSetup" finished-at="2021-10-26T19:38:02 IST" duration-ms="7486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="tc03_validate_Header_Links()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:38:02 IST" name="tc03_validate_Header_Links" finished-at="2021-10-26T19:38:02 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_validate_Header_Links -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:38:02 IST" name="tearDown" finished-at="2021-10-26T19:38:07 IST" duration-ms="4838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:38:07 IST" name="driverSetup" finished-at="2021-10-26T19:38:13 IST" duration-ms="6349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="tc04_validate_homepage_products()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:38:13 IST" name="tc04_validate_homepage_products" finished-at="2021-10-26T19:38:18 IST" duration-ms="4273" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Home page products titles validated]]>
+            </line>
+            <line>
+              <![CDATA[Home page products images validated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc04_validate_homepage_products -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.testscripts.TS02_HomePageValidation@639c2c1d]" started-at="2021-10-26T19:38:18 IST" name="tearDown" finished-at="2021-10-26T19:38:19 IST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.automationpractice.testscripts.TS02_HomePageValidation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

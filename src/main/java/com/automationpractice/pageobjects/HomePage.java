@@ -2,7 +2,6 @@ package com.automationpractice.pageobjects;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +33,13 @@ public class HomePage {
 
 	@FindBy(xpath = "//div[@id='navbarExample']/ul/child::li")
 	private List<WebElement> header_Links;
+	
+	@FindBy(xpath = "//div[@id='footc']/following-sibling::footer")
+	private WebElement copyright_footer;
+
+	public WebElement getCopyright_footer() {
+		return copyright_footer;
+	}
 
 	public List<WebElement> getHome_product_images() {
 		return home_product_images;

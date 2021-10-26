@@ -1,5 +1,34 @@
-2021-10-21 20:15:29,536 - com.automationpractice.testbase.TestBase - INFO - Test has been Started
- 2021-10-21 20:15:33,816 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
- 2021-10-21 20:15:43,103 - com.automationpractice.testbase.TestBase - INFO - Driver instance killed
- 2021-10-21 20:15:44,056 - com.automationpractice.testbase.TestBase - INFO - Test Completed
+2021-10-26 19:37:04,559 - com.automationpractice.testbase.TestBase - INFO - Test has been Started
+ 2021-10-26 19:37:08,526 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
+ 2021-10-26 19:37:21,006 - com.automationpractice.testbase.TestBase - INFO - Clicked on Header Signup Button
+ 2021-10-26 19:37:21,822 - com.automationpractice.testbase.TestBase - INFO - Field Signup User Name is filled with userfortest987
+ 2021-10-26 19:37:22,100 - com.automationpractice.testbase.TestBase - INFO - Field Signup Password is filled with oookjjuahs344
+ 2021-10-26 19:37:22,229 - com.automationpractice.testbase.TestBase - INFO - Clicked on Signup Button
+ 2021-10-26 19:37:23,848 - com.automationpractice.testbase.TestBase - INFO - Signup is Successful
+ 2021-10-26 19:37:24,874 - com.automationpractice.testbase.TestBase - INFO - Driver instance closed
+ 2021-10-26 19:37:27,692 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
+ 2021-10-26 19:37:32,720 - com.automationpractice.testbase.TestBase - INFO - Clicked on Header Login Button
+ 2021-10-26 19:37:33,451 - com.automationpractice.testbase.TestBase - INFO - Field Login user name  is filled with testnew1
+ 2021-10-26 19:37:33,682 - com.automationpractice.testbase.TestBase - INFO - Field Login password  is filled with test@123
+ 2021-10-26 19:37:33,792 - com.automationpractice.testbase.TestBase - INFO - Clicked on Login Button
+ 2021-10-26 19:37:37,276 - com.automationpractice.testbase.TestBase - INFO - Login is Successful
+ 2021-10-26 19:37:37,515 - com.automationpractice.testbase.TestBase - INFO - Clicked on Logout Button
+ 2021-10-26 19:37:37,515 - com.automationpractice.testbase.TestBase - INFO - Logout Successful
+ 2021-10-26 19:37:38,521 - com.automationpractice.testbase.TestBase - INFO - Driver instance closed
+ 2021-10-26 19:37:40,377 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
+ 2021-10-26 19:37:45,345 - com.automationpractice.testbase.TestBase - INFO - Clicked on Header Login Button
+ 2021-10-26 19:37:46,105 - com.automationpractice.testbase.TestBase - INFO - Field Login user name  is filled with testnew2
+ 2021-10-26 19:37:46,382 - com.automationpractice.testbase.TestBase - INFO - Field Login password  is filled with test@123
+ 2021-10-26 19:37:46,499 - com.automationpractice.testbase.TestBase - INFO - Clicked on Login Button
+ 2021-10-26 19:37:49,530 - com.automationpractice.testbase.TestBase - INFO - Login is Successful
+ 2021-10-26 19:37:49,768 - com.automationpractice.testbase.TestBase - INFO - Clicked on Logout Button
+ 2021-10-26 19:37:49,769 - com.automationpractice.testbase.TestBase - INFO - Logout Successful
+ 2021-10-26 19:37:54,649 - com.automationpractice.testbase.TestBase - INFO - Driver instance closed
+ 2021-10-26 19:37:56,613 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
+ 2021-10-26 19:38:07,487 - com.automationpractice.testbase.TestBase - INFO - Driver instance closed
+ 2021-10-26 19:38:09,388 - com.automationpractice.testbase.TestBase - INFO - Driver instance initialized
+ 2021-10-26 19:38:15,900 - com.automationpractice.testbase.TestBase - INFO - Home page products titles validated
+ 2021-10-26 19:38:18,111 - com.automationpractice.testbase.TestBase - INFO - Home page products images validated
+ 2021-10-26 19:38:19,021 - com.automationpractice.testbase.TestBase - INFO - Driver instance closed
+ 2021-10-26 19:38:19,924 - com.automationpractice.testbase.TestBase - INFO - Test Completed
  

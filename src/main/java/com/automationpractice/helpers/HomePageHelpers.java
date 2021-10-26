@@ -39,6 +39,7 @@ public class HomePageHelpers extends CommonUtilities {
 					.getProperty("title_homepage_product" + String.valueOf(count + 1));
 			assertEquals(actual_product_title, expected_product_title);
 		}
+		publishMessageInReports_PASS("Home page products titles validated");
 
 	}
 	
@@ -48,6 +49,11 @@ public class HomePageHelpers extends CommonUtilities {
 		for (int count = 0; count < headerProductImages.size(); count++) {
 			isElementPresent(headerProductImages.get(count));
 		}
+		publishMessageInReports_PASS("Home page products images validated");
+	}
+	
+	public void validate_footer_elements() {
+		
 	}
 
 }

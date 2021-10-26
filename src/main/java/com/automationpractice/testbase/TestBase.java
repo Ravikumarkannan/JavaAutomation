@@ -11,8 +11,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 
 import com.automationpractice.constants.Constants;
+import com.automationpractice.utilities.ExcelReader;
 import com.automationpractice.utilities.PropertyReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -21,6 +23,7 @@ public class TestBase {
 
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	protected Logger log = Logger.getLogger(TestBase.class.getName());
+	public ExcelReader excelReader = new ExcelReader();
 	public PropertyReader reader = new PropertyReader();
 	public static Properties properties;
 
@@ -55,7 +58,6 @@ public class TestBase {
 
 	@AfterSuite(alwaysRun = true)
 	public void closeBrowser() {
-		driver.get().quit();
 		driver.remove();
 		log.info("Test Completed");
 	}
@@ -68,6 +70,21 @@ public class TestBase {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.get().close();
-		log.info("Driver instance killed");
+		driver.get().quit();
+		log.info("Driver instance closed");
 	}
+	
+//	@DataProvider(name = "loginTestData")
+//	public Object dataProviderFunc() {
+//		return new Object[][] {
+//			{"testnew1","test@123"}
+//		};
+//	}
+	
+	@DataProvider(name = "loginTestData")
+	public Object[][] loginData() {
+		Object[][] loginDataArray= excelReader.getExcelData(Constants.EXCEL_FILE_PATH, "sheet1");
+		return loginDataArray;
+	}
+	
 }

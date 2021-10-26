@@ -18,31 +18,66 @@ public class LoginPage {
 	}
 
 	@FindBy(xpath = "//a[contains(text(),'Log in')]")
-	private WebElement header_Login;
+	private WebElement headerLogin;
 
 	@FindBy(xpath = "//input[@id='loginusername']")
-	private WebElement textBox_UserName;
+	private WebElement loginUserName;
 
 	@FindBy(xpath = "//input[@id='loginpassword']")
-	private WebElement textBox_Password;
+	private WebElement loginPassword;
 
 	@FindBy(xpath = "//button[contains(text(),'Log in')]")
-	private WebElement button_Login;
+	private WebElement buttonLogin;
+
+	@FindBy(xpath = "//a[@id='signin2']")
+	private WebElement headerSignup;
+
+	@FindBy(xpath = "//input[@id='sign-username']")
+	private WebElement signupUserName;
+
+	@FindBy(xpath = "//input[@id='sign-password']")
+	private WebElement signupPassword;
+
+	@FindBy(xpath = "//button[text()='Sign up']")
+	private WebElement buttonSignup;
+	
+	public WebElement getButtonClose() {
+		return buttonClose;
+	}
+
+	@FindBy(xpath = "(//button[text()='Close'])[2]")
+	private WebElement buttonClose;
 
 	public WebElement getHeader_Login() {
-		return header_Login;
+		return headerLogin;
+	}
+
+	public WebElement getHeaderSignup() {
+		return headerSignup;
+	}
+
+	public WebElement getSignupUserName() {
+		return signupUserName;
+	}
+
+	public WebElement getSignupPassword() {
+		return signupPassword;
+	}
+
+	public WebElement getButtonSignup() {
+		return buttonSignup;
 	}
 
 	public WebElement getTextBox_UserName() {
-		return textBox_UserName;
+		return loginUserName;
 	}
 
 	public WebElement getTextBox_Password() {
-		return textBox_Password;
+		return loginPassword;
 	}
 
 	public WebElement getButton_Login() {
-		return button_Login;
+		return buttonLogin;
 	}
 
 }
